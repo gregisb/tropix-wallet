@@ -6,8 +6,6 @@ type Props = {
 };
 
 export const TableArea = ({ list }: Props) => {
-  {console.log('table Area', list)}
-
   return (
     <C.Table>
       <thead>

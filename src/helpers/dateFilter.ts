@@ -8,22 +8,16 @@ export const getCurrentMonth = () => {
 export const filterListByMonth = (list: Item[], date: string): Item[] => {
     let newList: Item[] = [];
     let [year, month] = date.split('-');
-    console.log('year', typeof parseInt(year))
-    console.log('month', month)
-
-    console.log('getFullYear', )
-
+  
     for(let i in list) {
         if(
             list[i].date.getFullYear() === parseInt(year) &&
             (list[i].date.getMonth() +1) === parseInt(month)
         ) {
-            console.log('passou por aqui?')
             newList.push(list[i])
         }
     };
 
-    console.log('filter function', newList)
     return newList
 };
 
