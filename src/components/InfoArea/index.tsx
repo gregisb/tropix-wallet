@@ -33,7 +33,7 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
       </C.MonthArea>
 
       <C.ResumeArea>
-        <ResumeItem title='Receitas' value={income} />
+        <ResumeItem title='Receita' value={income} />
         <ResumeItem title='Desepesas'value={expense} />
         <ResumeItem 
             title='Balanço'

@@ -7,6 +7,7 @@ import { getCurrentMonth, filterListByMonth } from "./helpers/dateFilter";
 import { TableArea } from "./components/TableArea";
 import { InfoArea } from "./components/InfoArea";
 import { InputArea } from "./components/InputArea";
+import { Footer } from './components/Footer';
 
 const App = () => {
   const [list, setList] = useState(items);
@@ -62,6 +63,7 @@ const App = () => {
 
         <TableArea list={filteredList} />
       </C.Body>
+      <Footer />
     </C.Container>
   );
 };

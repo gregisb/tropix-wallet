@@ -76,7 +76,7 @@ export const InputArea = ({ onAdd }: Props) => {
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>Valor</C.InputTitle>
-          <C.Input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
+          <C.Input type="text" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>&nbsp;</C.InputTitle>
